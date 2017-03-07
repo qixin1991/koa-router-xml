@@ -1,6 +1,6 @@
 {
   "name": "koa-router-xml",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "koa-router@next xml parser middleware.",
   "main": "./lib/index.js",
   "scripts": {
