@@ -1,0 +1,28 @@
+{
+  "name": "koa-router-xml",
+  "version": "0.0.1",
+  "description": "koa-router@next xml parser middleware.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qixin1991/koa-router-xml.git"
+  },
+  "keywords": [
+    "koa-router",
+    "xml",
+    "parser",
+    "middleware"
+  ],
+  "author": "Qixin <me@qixin.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qixin1991/koa-router-xml/issues"
+  },
+  "homepage": "https://github.com/qixin1991/koa-router-xml#readme",
+  "dependencies": {
+    "xml2js": "^0.4.17"
+  }
+}
