@@ -45,8 +45,11 @@ router.post('/', async ctx => {
     ctx.body = data;
 });
 
+// convert json to xml
+router.get('/xml-data', async ctx => {
+  var obj = {name: "Super", Surname: "Man", age: 23};
+  var xml = ctx.json2xml(obj);
+  ctx.body = xml;
+});
+
 ```
-
-### TODO
-
-- Support `json2xml`
