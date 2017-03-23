@@ -29,7 +29,7 @@ app.use(xml());
  
 app.use(userRouter.routes());
  
-var port = 3000;
+let port = 3000;
 app.listen(port, function () {
   console.log(` ---> Server running on port: ${port}`);
 });
@@ -41,14 +41,14 @@ const router = require('koa-router')();
 
 // convert xml to json
 router.post('/', async ctx => {
-    var data = await ctx.xml2json();
+    let data = await ctx.xml2json();
     ctx.body = data;
 });
 
 // convert json to xml
 router.get('/xml-data', async ctx => {
-  var obj = {name: "Super", Surname: "Man", age: 23};
-  var xml = ctx.json2xml(obj);
+  let obj = {name: "Super", Surname: "Man", age: 23};
+  let xml = ctx.json2xml(obj);
   ctx.body = xml;
 });
 
